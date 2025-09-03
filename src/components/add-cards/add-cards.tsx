@@ -4,9 +4,9 @@ import DisplayImage from "../display-image/display-image";
 export default function AddCards() {
   const fileInputRef = useRef(null);
 
-  const handleButtonClick = () => {
-    (fileInputRef.current! as HTMLInputElement).click(); // Programmatically click the hidden file input
-  };
+//   const handleButtonClick = () => {
+//     (fileInputRef.current! as HTMLInputElement).click(); // Programmatically click the hidden file input
+//   };
 
   const handleFileChange = (event:React.ChangeEvent<HTMLInputElement>) => {
     const file = URL.createObjectURL(event?.target?.files ? event?.target?.files[0]: new Blob());
