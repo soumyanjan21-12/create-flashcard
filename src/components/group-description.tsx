@@ -3,7 +3,7 @@ import {
   ChangeDescription,
   ChangeGroupName,
   type FlashCards,
-} from "../../pages/create-flashcard/create-flashcard-slice";
+} from "../pages/create-flashcard/create-flashcard-slice";
 
 export default function GroupDescription() {
   const { groupName, description } = useSelector(

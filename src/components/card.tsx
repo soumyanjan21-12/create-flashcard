@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import DisplayImage from "../display-image/display-image";
+import DisplayImage from "./display-image";
 import { useDispatch } from "react-redux";
-import { editCard } from "../../pages/create-flashcard/create-flashcard-slice";
+import { editCard } from "../pages/create-flashcard/create-flashcard-slice";
 
 export default function Card({
   card,
@@ -17,7 +17,7 @@ export default function Card({
   const fileInputRef = useRef(null);
   const dispatch = useDispatch();
   const handleButtonClick = () => {
-    (fileInputRef.current! as HTMLInputElement).click(); // Programmatically click the hidden file input
+    (fileInputRef.current! as HTMLInputElement).click(); 
   };
 
   const handleTermChange = (e: React.ChangeEvent<HTMLInputElement>) => {
